@@ -1,5 +1,6 @@
 [submodule "vim/bundle/vim-wombat"]
 	path = vim/bundle/vim-wombat
+
 	url = https://github.com/cschlueter/vim-wombat.git
 [submodule "vim/bundle/AutoClose"]
 	path = vim/bundle/AutoClose
@@ -61,12 +62,9 @@
 [submodule "vim/bundle/snipmate"]
 	path = vim/bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
-[submodule "vim/bundle/zoomwin"]
-	path = vim/bundle/zoomwin
-	url = https://github.com/vim-scripts/ZoomWin
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "vim/bundle/distinguished"]
-	path = vim/bundle/distinguished
-	url = https://github.com/Lokaltog/vim-distinguished.git
+[submodule "vim/bundle/zoomwin"]
+	path = vim/bundle/zoomwin
+	url = https://github.com/vim-scripts/ZoomWin
