@@ -55,9 +55,6 @@
 [submodule "vim/bundle/vim-slim"]
 	path = vim/bundle/vim-slim
 	url = https://github.com/bbommarito/vim-slim.git
-[submodule "vim/bundle/splitjoin.vim"]
-	path = vim/bundle/splitjoin.vim
-	url = https://github.com/AndrewRadev/splitjoin.vim.git
 [submodule "vim/bundle/surround"]
 	path = vim/bundle/surround
 	url = https://github.com/tpope/vim-surround.git
