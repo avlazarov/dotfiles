@@ -8,7 +8,8 @@ endif
 
 " Pathogen
 filetype off
-call pathogen#runtime_append_all_bundles()
+set nocp
+call pathogen#infect()
 call pathogen#helptags()
 filetype plugin on
 
