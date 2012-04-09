@@ -16,7 +16,7 @@ filetype plugin on
 filetype indent on
 
 " Colors
-colors distinguished
+colors wombat
 
 " Don't show the current command in the lower right corner
 set showcmd
