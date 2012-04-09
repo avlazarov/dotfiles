@@ -1,5 +1,11 @@
 # apt
 alias get="sudo apt-get install"
+alias upgrade="sudo apt-get upgrade"
+alias update="sudo apt-get update"
+alias remove="sudo apt-get remove"
+alias check="sudo apt-get check"
+
+alias please="sudo"
 
 # ls
 alias l="ls -lahF"
