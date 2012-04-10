@@ -7,8 +7,8 @@ if has('win32')
 endif
 
 " Pathogen
-filetype off
 set nocp
+filetype off
 call pathogen#infect()
 call pathogen#helptags()
 filetype plugin on
@@ -66,6 +66,7 @@ set shiftwidth=2
 
 " Use spaces, not tabs
 set expandtab
+call pathogen#infect()
 
 " Show invisible characters
 set list
@@ -105,9 +106,6 @@ set ignorecase
 " Disable swap files
 set nobackup nowritebackup noswapfile
 
-" PHP
-au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
-
 " Make , the leader key
 let mapleader = ","
 
@@ -122,10 +120,16 @@ nnoremap vv _vg_
 nnoremap <C-u> mzg~iw`z
 
 " Split screens
-nnoremap gh <C-w>h
-nnoremap gj <C-w>j
-nnoremap gk <C-w>k
-nnoremap gl <C-w>l
+nnoremap <C-n> <C-W>n
+nnoremap gh <C-W>n<C-w>H
+nnoremap gj <C-W>n<C-w>J
+nnoremap gk <C-W>n<C-w>K
+nnoremap gl <C-W>n<C-w>L
+
+" Tabs
+nnoremap <C-t> :tabe<CR>
+nnoremap <C-h> :tabp<CR>
+nnoremap <C-l> :tabn<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
