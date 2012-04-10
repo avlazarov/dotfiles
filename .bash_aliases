@@ -5,7 +5,16 @@ alias update="sudo apt-get update"
 alias remove="sudo apt-get remove"
 alias check="sudo apt-get check"
 
+# misc
 alias please="sudo"
+alias zipr="zip -r"
+alias cdd="cd =-"  # previous PWD
+alias ..="cd .."
+alias reload=". ~/.bashrc"
+function take {
+  mkdir $1
+  cd $1
+}
 
 # ls
 alias l="ls -lahF"
