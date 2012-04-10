@@ -8,7 +8,6 @@ alias check="sudo apt-get check"
 # misc
 alias please="sudo"
 alias zipr="zip -r"
-alias cdd="cd =-"  # previous PWD
 alias ..="cd .."
 alias reload=". ~/.bashrc"
 function take {
@@ -29,6 +28,7 @@ alias ga="git add"
 alias gaa="git add -A"
 
 alias gc="git commit"
+alias cdd="cd -"  # previous PWD
 alias gcm="git commit -m"
 
 alias gr="git rebase"
