@@ -126,10 +126,16 @@ nnoremap gj <C-W>n<C-w>J
 nnoremap gk <C-W>n<C-w>K
 nnoremap gl <C-W>n<C-w>L
 
+nmap <C-k> :wincmd k<CR>
+nmap <C-j> :wincmd j<CR>
+nmap <C-h> :wincmd h<CR>
+nmap <C-l> :wincmd l<CR>
+
+
 " Tabs
-nnoremap <C-t> :tabe<CR>
-nnoremap <C-h> :tabp<CR>
-nnoremap <C-l> :tabn<CR>
+nnoremap ,t :tabe<CR>
+nnoremap ,h :tabp<CR>
+nnoremap ,l :tabn<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
