@@ -41,6 +41,7 @@ alias gsp="git stash pop"
 alias gco="git checkout"
 
 alias gcl="git clone"
+alias g:wl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 
 # RUBY
 
