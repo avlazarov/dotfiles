@@ -24,6 +24,8 @@ alias gb="git branch"
 
 alias gpr="git pull --rebase"
 
+alias gca="git commit --amend"
+
 alias ga="git add"
 alias gaa="git add -A"
 
