@@ -29,8 +29,10 @@ alias gca="git commit --amend"
 alias ga="git add"
 alias gaa="git add -A"
 
+alias guf="git reset HEAD"
+
 alias gc="git commit"
-alias cdd="cd -"  # previous PWD
+alias cdd="cd -"  # previous working directory
 alias gcm="git commit -m"
 
 alias gr="git rebase"
