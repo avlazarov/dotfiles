@@ -22,6 +22,9 @@ colors wombat
 " Don't show the current command in the lower right corner
 set showcmd
 
+" A sexier scrolling
+set scrolloff=8
+
 " Tell vim to always put a status line in, even if there is only one window
 set laststatus=2
 
@@ -43,9 +46,6 @@ set autoread
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=2048
 
-" Use vim, no vi defaults
-set nocompatible
-
 " Show line numbers
 set number
 
@@ -66,7 +66,6 @@ set shiftwidth=2
 
 " Use spaces, not tabs
 set expandtab
-call pathogen#infect()
 
 " Show invisible characters
 set list
@@ -106,6 +105,9 @@ set ignorecase
 " Disable swap files
 set nobackup nowritebackup noswapfile
 
+" Use backspace to for deleting chars in insert mode
+set backspace=2
+
 " Make , the leader key
 let mapleader = ","
 
@@ -131,11 +133,13 @@ nmap <C-j> :wincmd j<CR>
 nmap <C-h> :wincmd h<CR>
 nmap <C-l> :wincmd l<CR>
 
+" Faster switch to normal mode 
+imap jj <esc>
 
 " Tabs
-nnoremap ,t :tabe<CR>
-nnoremap ,h :tabp<CR>
-nnoremap ,l :tabn<CR>
+nnoremap <Leader>t :tabe<CR>
+nnoremap <Leader>h :tabp<CR>
+nnoremap <Leader>l :tabn<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
