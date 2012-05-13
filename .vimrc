@@ -172,6 +172,10 @@ vmap <Leader>a: :Tabularize /:\zs<CR>
 nmap <Leader>at :Tabularize /\|<CR>
 vmap <Leader>at :Tabularize /\|<CR>
 
+" Copy
+nmap <C-c> "+y
+vmap <C-c> "+y
+
 " CtrlP clear cache
 nnoremap <D-5> :CtrlPClearCache<CR>
 
