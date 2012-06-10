@@ -133,13 +133,19 @@ nmap <C-j> :wincmd j<CR>
 nmap <C-h> :wincmd h<CR>
 nmap <C-l> :wincmd l<CR>
 
-" Faster switch to normal mode 
+" Faster switch to normal mode
 imap jj <esc>
 
 " Tabs
-nnoremap <Leader>t :tabe<CR>
-nnoremap <Leader>h :tabp<CR>
-nnoremap <Leader>l :tabn<CR>
+map <C-t> :tabe<CR>
+map <F1> :tabnext 1<CR>
+map <F2> :tabnext 2<CR>
+map <F3> :tabnext 3<CR>
+map <F4> :tabnext 4<CR>
+map <F5> :tabnext 5<CR>
+map <F6> :tabnext 6<CR>
+map <F7> :tabnext 7<CR>
+map <F8> :tabnext 8<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -148,7 +154,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nmap <leader>fef ggVG=
 
 " Toggle NERDTree
-nnoremap <F3> :NERDTreeToggle<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
 
 " Toggle ZoomWin
 nnoremap <Leader>z :ZoomWin<CR>
