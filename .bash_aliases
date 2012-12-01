@@ -10,6 +10,7 @@ alias please="sudo"
 alias zipr="zip -r"
 alias ..="cd .."
 alias reload=". ~/.bashrc"
+alias web="chromium-browser"
 function take {
   mkdir $1
   cd $1
@@ -32,7 +33,7 @@ alias gaa="git add -A"
 alias guf="git reset HEAD"
 
 alias gc="git commit"
-alias cdd="cd -"  # previous working directory
+alias cdd="cd -"
 alias gcm="git commit -m"
 
 alias gr="git rebase"
