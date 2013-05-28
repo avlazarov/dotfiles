@@ -52,6 +52,7 @@ alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(whi
 
 alias b="bundle"
 alias be="bundle exec"
+alias bi="bundle install"
 
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"
