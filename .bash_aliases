@@ -11,6 +11,7 @@ alias zipr="zip -r"
 alias ..="cd .."
 alias reload=". ~/.bashrc"
 alias web="chromium-browser"
+alias tdl="todo ls --all"
 function take {
   mkdir $1
   cd $1
