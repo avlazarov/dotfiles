@@ -188,6 +188,9 @@ nnoremap <D-5> :CtrlPClearCache<CR>
 " Remap command key. @logicalparadox style.
 nnoremap ; :
 
+" Faster :Ack -a
+nnoremap <leader>a :Ack<Space>-a<Space>
+
 " http://jeetworks.org/node/89
 function! s:MoveLineUp()
   call <SID>MoveLineOrVisualUp(".", "")
