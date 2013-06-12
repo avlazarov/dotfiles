@@ -189,7 +189,7 @@ nnoremap <D-5> :CtrlPClearCache<CR>
 nnoremap ; :
 
 " Faster :Ack -a
-nnoremap <leader>a :Ack<Space>-a<Space>
+nnoremap <leader>s :Ack<Space>-a<Space>
 
 " http://jeetworks.org/node/89
 function! s:MoveLineUp()
