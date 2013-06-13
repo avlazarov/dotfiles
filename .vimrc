@@ -191,6 +191,9 @@ nnoremap ; :
 " Faster :Ack -a
 nnoremap <leader>s :Ack<Space>-a<Space>
 
+" Better NERDTree
+let NERDTreeMinimalUI = 1
+
 " http://jeetworks.org/node/89
 function! s:MoveLineUp()
   call <SID>MoveLineOrVisualUp(".", "")
