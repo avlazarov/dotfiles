@@ -128,24 +128,31 @@ nnoremap gj <C-W>n<C-w>J
 nnoremap gk <C-W>n<C-w>K
 nnoremap gl <C-W>n<C-w>L
 
-nmap <C-k> :wincmd k<CR>
-nmap <C-j> :wincmd j<CR>
-nmap <C-h> :wincmd h<CR>
-nmap <C-l> :wincmd l<CR>
+" Move around screens
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
+
+" Resize screens
+nnoremap <silent> <C-Right> :vertical resize +10<CR>
+nnoremap <silent> <C-Left>  :vertical resize -10<CR>
+nnoremap <silent> <C-Up>    :resize +10<CR>
+nnoremap <silent> <C-Down>  :resize -10<CR>
 
 " Faster switch to normal mode
 imap jj <esc>
 
 " Tabs
-map <C-t> :tabe<CR>
-map <F1> :tabnext 1<CR>
-map <F2> :tabnext 2<CR>
-map <F3> :tabnext 3<CR>
-map <F4> :tabnext 4<CR>
-map <F5> :tabnext 5<CR>
-map <F6> :tabnext 6<CR>
-map <F7> :tabnext 7<CR>
-map <F8> :tabnext 8<CR>
+map <silent> <C-t> :tabe<CR>
+map <silent> <F1> :tabnext 1<CR>
+map <silent> <F2> :tabnext 2<CR>
+map <silent> <F3> :tabnext 3<CR>
+map <silent> <F4> :tabnext 4<CR>
+map <silent> <F5> :tabnext 5<CR>
+map <silent> <F6> :tabnext 6<CR>
+map <silent> <F7> :tabnext 7<CR>
+map <silent> <F8> :tabnext 8<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
