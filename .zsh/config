@@ -1,0 +1,16 @@
+# Prompt
+
+git_branch(){
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+autoload -U colors
+colors
+setopt prompt_subst
+setopt transient_rprompt
+PROMPT='%{$fg_bold[white]%}→%{$reset_color%} '
+RPROMPT='%{$fg_bold[green]%}%c%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bold[red]%}$(git_branch)%{$reset_color%}'
+
+# Load completions for Ruby, Git, etc.
+autoload compinit
+compinit

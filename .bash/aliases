@@ -9,7 +9,6 @@ alias check="sudo apt-get check"
 alias please="sudo"
 alias zipr="zip -r"
 alias ..="cd .."
-alias reload=". ~/.bashrc"
 alias web="chromium-browser"
 alias tdl="todo ls --all"
 function take {
@@ -18,7 +17,10 @@ function take {
 }
 
 # ls
+alias ls="ls --color=auto"
 alias l="ls -lahF"
+alias ll="ls -alF"
+alias la="ls -A"
 
 # Git
 alias g="git"
