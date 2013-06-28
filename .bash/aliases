@@ -45,6 +45,8 @@ alias gst="git status"
 
 alias gs="git stash"
 alias gsp="git stash pop"
+alias gsa="git stash apply"
+alias gsc="git stash clear"
 
 alias gco="git checkout"
 
