@@ -141,7 +141,7 @@ nnoremap <silent> <C-Up>    :resize +10<CR>
 nnoremap <silent> <C-Down>  :resize -10<CR>
 
 " Faster switch to normal mode
-imap jj <esc>
+imap jk <esc>
 
 " Tabs
 map <silent> <C-t> :tabe<CR>
@@ -202,6 +202,11 @@ nnoremap <leader>s :Ack<Space>-a<Space>
 
 " Better NERDTree
 let NERDTreeMinimalUI = 1
+
+" Rails specific
+nnoremap <Leader>rvv :RVview<CR>
+nnoremap <Leader>rvc :RVcontroller<CR>
+nnoremap <Leader>av :AV<CR>
 
 " http://jeetworks.org/node/89
 function! s:MoveLineUp()
