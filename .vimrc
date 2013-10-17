@@ -200,6 +200,10 @@ nnoremap ; :
 " Faster :Ack -a
 nnoremap <leader>s :Ack<Space>-a<Space>
 
+" SplitJoin
+nnoremap ss :SplitjoinSplit<cr>
+nnoremap sj :SplitjoinJoin<cr>
+
 " Better NERDTree
 let NERDTreeMinimalUI = 1
 

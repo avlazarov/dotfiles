@@ -71,3 +71,6 @@
 [submodule "vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
 	url = https://github.com/corntrace/bufexplorer.git
+[submodule ".vim/bundle/splitjoin"]
+	path = .vim/bundle/splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim
