@@ -1,11 +1,6 @@
 " Switch on syntax highlighting
 syntax on
 
-" Tell Windows to store cache correctly
-if has('win32')
-  let g:Powerline_cache_file='C:\Program Files (x86)\Vim\vim73\bundle\vim-powerline\Powerline_default_default_compatible.cache'
-endif
-
 " Pathogen
 set nocp
 filetype off
@@ -114,6 +109,11 @@ let mapleader = ","
 " Remove s and Q
 nnoremap s <Nop>
 nnoremap Q <Nop>
+
+" Faster save
+noremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
 
 " Visual mode, marking a single line
 nnoremap vv _vg_
