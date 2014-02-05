@@ -17,6 +17,12 @@ colors wombat
 " Don't show the current command in the lower right corner
 set showcmd
 
+" Remove menu bar
+set guioptions-=m
+
+" Remove toolbar
+set guioptions-=T
+
 " A sexier scrolling
 set scrolloff=8
 
