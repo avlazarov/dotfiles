@@ -204,7 +204,7 @@ nnoremap <D-5> :CtrlPClearCache<CR>
 nnoremap ; :
 
 " Faster :Ack -a
-nnoremap <leader>s :Ack<Space>-a<Space>
+nnoremap <leader>s :Ack<Space>
 
 " SplitJoin
 nnoremap ss :SplitjoinSplit<cr>
