@@ -62,6 +62,7 @@ alias bi="bundle install"
 alias rdm="be rake db:migrate"
 alias rdmr="be rake db:migrate:reset"
 alias rdtp="be rake db:test:prepare"
+alias rdtl="be rake db:test:load"
 alias rdr="be rake db:rollback"
 
 alias rgm="rails g migration"
