@@ -14,6 +14,9 @@ filetype indent on
 " Colors
 colors wombat
 
+" Remove blinking cursor
+set gcr=n:blinkon0
+
 " Don't show the current command in the lower right corner
 set showcmd
 
