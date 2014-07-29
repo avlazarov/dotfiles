@@ -203,15 +203,12 @@ vmap <C-q> "+gP
 " CtrlP clear cache
 nnoremap <D-5> :CtrlPClearCache<CR>
 
-" Remap command key. @logicalparadox style.
+" Remap command key
 nnoremap ; :
 
-" Faster :Ack -a
-nnoremap <leader>s :Ack<Space>
-
 " SplitJoin
-nnoremap ss :SplitjoinSplit<cr>
-nnoremap sj :SplitjoinJoin<cr>
+nnoremap <Leader>ss :SplitjoinSplit<cr>
+nnoremap <Leader>sj :SplitjoinJoin<cr>
 
 " Better NERDTree
 let NERDTreeMinimalUI = 1
@@ -219,7 +216,6 @@ let NERDTreeMinimalUI = 1
 " Rails specific
 nnoremap <Leader>rvv :RVview<CR>
 nnoremap <Leader>rvc :RVcontroller<CR>
-nnoremap <Leader>av :AV<CR>
 
 " http://jeetworks.org/node/89
 function! s:MoveLineUp()
