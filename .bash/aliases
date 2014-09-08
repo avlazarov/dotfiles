@@ -67,6 +67,8 @@ alias rdr="be rake db:rollback"
 
 alias rgm="rails g migration"
 
+alias migrate="be rake db:migrate db:rollback && be rake db:migrate"
+
 alias spr="be spork rspec"
 alias spc="be spork cucumber"
 
