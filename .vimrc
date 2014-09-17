@@ -14,9 +14,6 @@ filetype indent on
 " Colors
 colors wombat
 
-" Cursor color
-highlight Cursor guifg=black guibg=#ffff00
-
 " Remove blinking cursor
 set gcr=n:blinkon0
 
