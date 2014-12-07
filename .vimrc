@@ -112,6 +112,12 @@ set nobackup nowritebackup noswapfile
 " Use backspace to for deleting chars in insert mode
 set backspace=2
 
+" Turn off beep sounds
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 " Make , the leader key
 let mapleader = ","
 
