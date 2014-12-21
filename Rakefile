@@ -6,6 +6,14 @@ namespace :vim do
   task :bundle do
     `git submodule update --init --recursive`
   end
+
+  desc "Removes a vim plugin"
+  task :remove_plugin, [:plugin] do |t, args|
+    plugin = args[:plugin]
+
+    `git submodule deinit -f .vim/bundle/#{plugin}`
+    `git rm .vim/bundle/#{plugin}`
+  end
 end
 
 task :install do
