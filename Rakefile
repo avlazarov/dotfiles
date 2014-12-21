@@ -4,7 +4,7 @@ require 'fileutils'
 namespace :vim do
   desc "Fetch the latest commit for each submodule"
   task :bundle do
-    `git submodule foreach git pull origin master`
+    `git submodule update --init --recursive`
   end
 end
 
