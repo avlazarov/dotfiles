@@ -118,9 +118,6 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
-" Don't user snipmate's snippets
-let g:snippets_dir=$HOME . "/.vim/snippets"
-
 " Make , the leader key
 let mapleader = ","
 
