@@ -3,3 +3,5 @@ parse_git_branch() {
 }
 
 PS1="${debian_chroot:+($debian_chroot)}\u@\h\$(parse_git_branch):\w$ "
+
+export EDITOR=vim
