@@ -18,7 +18,7 @@ end
 
 task :install do
   desc "Copy all dotfiles to the home directory"
-  %w(.bash .bash_profile .vim .vimrc .Xmodmap .zsh .zshrc .gemrc).each do |dotfile|
+  %w(.bash .bash_profile .vim .vimrc .zsh .zshrc .gemrc .config/terminator).each do |dotfile|
     FileUtils.ln_s File.join(Dir.pwd, dotfile), ENV['HOME'], verbose: true, force: true
   end
 end
