@@ -27,14 +27,3 @@ task :install do
     FileUtils.ln_s dotfile(file), ENV['HOME'], verbose: true, force: true
   end
 end
-
-desc "Ubuntu keymappings"
-task :mappings do
-  # Keep the original file just in case
-  FileUtils.mv '/usr/share/X11/xkb/symbols/pc', '/usr/share/X11/xkb/symbols/pc_original', verbose: true, force: false
-
-  FileUtils.ln_s dotfile('X11/xkb/symbols/pc'), '/usr/share/X11/xkb/symbols/pc', verbose: true, force: false
-
-  # Remove xkb's cache
-  FileUtils.rm Dir.glob('/var/lib/xkb/*'), force: true
-end
