@@ -53,8 +53,7 @@ alias gco="git checkout"
 alias gcl="git clone"
 alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 
-# RUBY
-
+# Ruby
 alias b="bundle"
 alias be="bundle exec"
 alias bi="bundle install"
@@ -68,4 +67,4 @@ alias migrate="be rake db:migrate db:rollback && be rake db:migrate"
 
 alias rgm="rails g migration"
 
-alias ree="RUBY_HEAP_MIN_SLOTS=1000000 RUBY_HEAP_SLOTS_INCREMENT=1000000 RUBY_HEAP_SLOTS_GROWTH_FACTOR=1 RUBY_GC_MALLOC_LIMIT=1000000000 RUBY_HEAP_FREE_MIN=500000"
+alias ree="RUBY_GC_HEAP_INIT_SLOTS=1000000 RUBY_HEAP_SLOTS_INCREMENT=1000000 RUBY_HEAP_SLOTS_GROWTH_FACTOR=1 RUBY_GC_MALLOC_LIMIT=1000000000 RUBY_HEAP_FREE_MIN=500000"
