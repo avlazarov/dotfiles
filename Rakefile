@@ -2,8 +2,12 @@ require 'rake'
 require 'fileutils'
 
 
-def dotfile(path)
-  File.expand_path("../#{path}", __FILE__)
+def dotfile(filename)
+  File.expand_path "../#{filename}", __FILE__
+end
+
+def homepath(filename)
+  File.dirname File.join(Dir.home, filename)
 end
 
 namespace :vim do
@@ -24,6 +28,6 @@ end
 task :install do
   desc "Copy all dotfiles to the home directory"
   %w(.bash .bash_profile .vim .vimrc .zsh .zshrc .gemrc .config/terminator).each do |file|
-    FileUtils.ln_s dotfile(file), ENV['HOME'], verbose: true, force: true
+    FileUtils.ln_s dotfile(file), homepath(file), verbose: true, force: true
   end
 end
