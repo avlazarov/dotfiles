@@ -10,7 +10,7 @@
   switch_to_tab_3 = F3
   switch_to_tab_1 = F1
   new_tab = <Primary>t
-  copy = <Primary><Shift>c
+  copy = <Primary>k
   paste = <Primary>v
   switch_to_tab_8 = F8
   switch_to_tab_9 = F9
