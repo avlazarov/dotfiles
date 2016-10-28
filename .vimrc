@@ -203,8 +203,8 @@ vmap <Leader>at :Tabularize /\|<CR>
 " Copy and Paste
 nmap <C-c> "+y
 vmap <C-c> "+y
-nmap <C-q> "+gP
-vmap <C-q> "+gP
+nmap <C-q> "+gp
+vmap <C-q> "+gp
 
 " CtrlP clear cache
 nnoremap <D-5> :CtrlPClearCache<CR>
