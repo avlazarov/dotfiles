@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! type xmllint > /dev/null 2>&1; then
+  echo 'python 2.7 or higher is required to run this'
+  exit 1
+fi
+
 if [ -t 0 ]; then
   if [ $# -gt 0 ]; then
     echo "$*" | python -m json.tool
