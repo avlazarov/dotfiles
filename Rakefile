@@ -1,22 +1,17 @@
 require 'rake'
 require 'fileutils'
 
-
-def dotfile(filename)
+def fullpath(filename)
   File.expand_path "../#{filename}", __FILE__
 end
 
-def homepath(filename)
-  File.dirname File.join(Dir.home, filename)
-end
-
 namespace :vim do
-  desc "Fetch the latest commit for each submodule"
+  desc 'Fetch the latest commit for each submodule'
   task :bundle do
     `git submodule update --init --recursive`
   end
 
-  desc "Removes a vim plugin"
+  desc 'Removes a vim plugin'
   task :remove_plugin, [:plugin] do |t, args|
     plugin = args[:plugin]
 
@@ -25,9 +20,19 @@ namespace :vim do
   end
 end
 
-task :install do
-  desc "Copy all dotfiles to the home directory"
-  %w(.bash .bash_profile .vim .vimrc .zsh .zshrc .gemrc .config/terminator).each do |file|
-    FileUtils.ln_s dotfile(file), homepath(file), verbose: true, force: true
+namespace :dotfiles do
+  desc 'Link dotfiles'
+  task :install do
+    %w(.bash .bash_profile .vim .vimrc .zsh .zshrc .gemrc .config/terminator).each do |file|
+      FileUtils.ln_s fullpath(file), Dir.home, verbose: true, force: true
+    end
+  end
+end
+
+namespace :bin do
+  desc 'Link binaries'
+  task :install do
+    FileUtils.ln_s fullpath('bin/prettyjson'), '/usr/bin/', verbose: true, force: true
+    FileUtils.ln_s fullpath('bin/prettyxml'),  '/usr/bin/', verbose: true, force: true
   end
 end
