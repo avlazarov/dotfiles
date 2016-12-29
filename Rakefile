@@ -1,8 +1,12 @@
 require 'rake'
 require 'fileutils'
 
-def fullpath(filename)
-  File.expand_path "../#{filename}", __FILE__
+
+module Helper
+  def self.symlink(source, destination)
+    fullpath_source = File.expand_path "../#{source}", __FILE__
+    FileUtils.ln_sf fullpath_source, destination, verbose: true
+  end
 end
 
 namespace :vim do
@@ -24,7 +28,7 @@ namespace :dotfiles do
   desc 'Link dotfiles'
   task :install do
     %w(.bash .bash_profile .vim .vimrc .zsh .zshrc .gemrc .config/terminator).each do |file|
-      FileUtils.ln_s fullpath(file), Dir.home, verbose: true, force: true
+      Helper.symlink file, Dir.home
     end
   end
 end
@@ -32,7 +36,7 @@ end
 namespace :bin do
   desc 'Link binaries'
   task :install do
-    FileUtils.ln_s fullpath('bin/prettyjson'), '/usr/bin/', verbose: true, force: true
-    FileUtils.ln_s fullpath('bin/prettyxml'),  '/usr/bin/', verbose: true, force: true
+    Helper.symlink 'bin/prettyjson', '/usr/bin/'
+    Helper.symlink 'bin/prettyxml',  '/usr/bin/'
   end
 end
