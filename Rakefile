@@ -15,7 +15,7 @@ namespace :vim do
     `git submodule update --init --recursive`
   end
 
-  desc 'Removes a vim plugin'
+  desc 'Remove a vim plugin'
   task :remove_plugin, [:plugin] do |t, args|
     plugin = args[:plugin]
 
@@ -27,9 +27,11 @@ end
 namespace :dotfiles do
   desc 'Link dotfiles'
   task :install do
-    %w(.bash .bash_profile .vim .vimrc .zsh .zshrc .gemrc .config/terminator).each do |file|
+    %w(.bash .bash_profile .vim .vimrc .zsh .zshrc .gemrc).each do |file|
       Helper.symlink file, Dir.home
     end
+
+    Helper.symlink '.config/terminator', File.join(Dir.home, '.config/')
   end
 end
 
