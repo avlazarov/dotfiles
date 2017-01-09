@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! type xmllint > /dev/null 2>&1; then
-  echo 'libxml2 is required to run this'
+  echo 'libxml2 and libxml2-utils are required to run this'
   exit 1
 fi
 
