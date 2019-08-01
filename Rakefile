@@ -12,7 +12,7 @@ end
 namespace :vim do
   desc 'Fetch the latest commit for each submodule'
   task :bundle do
-    `git submodule update --init --recursive`
+    `git submodule update --recursive --remote`
   end
 
   desc 'Remove a vim plugin'
