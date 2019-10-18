@@ -1,0 +1,75 @@
+[submodule ".vim/pack/plugins/start/vim-wombat.git"]
+	path = .vim/pack/plugins/start/vim-wombat.git
+	url = https://github.com/cschlueter/vim-wombat.git
+[submodule ".vim/pack/plugins/start/AutoClose.git"]
+	path = .vim/pack/plugins/start/AutoClose.git
+	url = https://github.com/vim-scripts/AutoClose.git
+[submodule ".vim/pack/plugins/start/ctrlp.vim.git"]
+	path = .vim/pack/plugins/start/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule ".vim/pack/plugins/start/ack.vim"]
+	path = .vim/pack/plugins/start/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule ".vim/pack/plugins/start/tabular.git"]
+	path = .vim/pack/plugins/start/tabular.git
+	url = https://github.com/godlygeek/tabular.git
+[submodule ".vim/pack/plugins/start/vim-cucumber"]
+	path = .vim/pack/plugins/start/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber
+[submodule ".vim/pack/plugins/start/vim-endwise.git"]
+	path = .vim/pack/plugins/start/vim-endwise.git
+	url = https://github.com/tpope/vim-endwise.git
+[submodule ".vim/pack/plugins/start/vim-fugitive"]
+	path = .vim/pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/pack/plugins/start/nerdcommenter.git"]
+	path = .vim/pack/plugins/start/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/pack/plugins/start/vim-rails.git"]
+	path = .vim/pack/plugins/start/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
+[submodule ".vim/pack/plugins/start/supertab.git"]
+	path = .vim/pack/plugins/start/supertab.git
+	url = https://github.com/ervandew/supertab.git
+[submodule ".vim/pack/plugins/start/syntastic"]
+	path = .vim/pack/plugins/start/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule ".vim/pack/plugins/start/vim-coffee-script"]
+	path = .vim/pack/plugins/start/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
+[submodule ".vim/pack/plugins/start/vim-extradite"]
+	path = .vim/pack/plugins/start/vim-extradite
+	url = https://github.com/int3/vim-extradite
+[submodule ".vim/pack/plugins/start/nerdtree"]
+	path = .vim/pack/plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule ".vim/pack/plugins/start/vim-powerline"]
+	path = .vim/pack/plugins/start/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
+[submodule ".vim/pack/plugins/start/vim-slim.git"]
+	path = .vim/pack/plugins/start/vim-slim.git
+	url = https://github.com/slim-template/vim-slim.git
+[submodule ".vim/pack/plugins/start/vim-surround.git"]
+	path = .vim/pack/plugins/start/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/pack/plugins/start/vim-ruby.git"]
+	path = .vim/pack/plugins/start/vim-ruby.git
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule ".vim/pack/plugins/start/ZoomWin"]
+	path = .vim/pack/plugins/start/ZoomWin
+	url = https://github.com/vim-scripts/ZoomWin
+[submodule ".vim/pack/plugins/start/bufexplorer.git"]
+	path = .vim/pack/plugins/start/bufexplorer.git
+	url = https://github.com/corntrace/bufexplorer.git
+[submodule ".vim/pack/plugins/start/splitjoin.vim"]
+	path = .vim/pack/plugins/start/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim
+[submodule ".vim/pack/plugins/start/vim-eunuch.git"]
+	path = .vim/pack/plugins/start/vim-eunuch.git
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule ".vim/pack/plugins/start/vim-test.git"]
+	path = .vim/pack/plugins/start/vim-test.git
+	url = https://github.com/janko-m/vim-test.git
+[submodule ".vim/pack/plugins/start/ag.vim.git"]
+	path = .vim/pack/plugins/start/ag.vim.git
+	url = https://github.com/rking/ag.vim.git

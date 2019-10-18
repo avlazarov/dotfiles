@@ -1,13 +1,6 @@
 " Switch on syntax highlighting
 syntax on
 
-" Pathogen
-set nocp
-filetype off
-call pathogen#infect()
-call pathogen#helptags()
-filetype plugin on
-
 " Indent
 filetype indent on
 
