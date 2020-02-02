@@ -105,7 +105,11 @@ set nobackup nowritebackup noswapfile
 " Use backspace to for deleting chars in insert mode
 set backspace=2
 
+" Disable the vim-go remaps as they fuck up a lot of my own bindings
 let g:go_def_mapping_enabled=0
+
+" Display tabs in go files in a more civilized way
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2 listchars=tab:..
 
 " Turn off beep sounds
 set noerrorbells visualbell t_vb=
