@@ -105,6 +105,8 @@ set nobackup nowritebackup noswapfile
 " Use backspace to for deleting chars in insert mode
 set backspace=2
 
+let g:go_def_mapping_enabled=0
+
 " Turn off beep sounds
 set noerrorbells visualbell t_vb=
 if has('autocmd')
