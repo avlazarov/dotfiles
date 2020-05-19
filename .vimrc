@@ -218,6 +218,12 @@ nnoremap <Leader>sj :SplitjoinJoin<cr>
 " Better NERDTree
 let NERDTreeMinimalUI = 1
 
+" Unlimited CtrlP results
+let g:ctrlp_max_files=0
+
+" Ignore some absurdly large directories
+let g:ctrlp_custom_ignore = 'node_modules\|tmp'
+
 " Rails specific
 nnoremap <Leader>rvv :RVview<CR>
 nnoremap <Leader>rvc :RVcontroller<CR>
