@@ -9,3 +9,4 @@ export HISTFILESIZE=10000
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/projects/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH="${PATH}:${HOME}/.krew/bin"
