@@ -11,10 +11,6 @@ alias zipr="zip -r"
 alias ..="cd .."
 alias web="chromium-browser"
 alias tdl="todo ls --all"
-function take {
-  mkdir $1
-  cd $1
-}
 
 # ls
 alias ls="ls --color=auto"
@@ -71,3 +67,13 @@ alias ree="RUBY_GC_HEAP_INIT_SLOTS=1000000 RUBY_HEAP_SLOTS_INCREMENT=1000000 RUB
 
 # Ubuntu
 alias open="xdg-open"
+
+function take {
+  mkdir $1
+  cd $1
+}
+
+function grep-in-project () {
+  git --no-pager grep "$@"
+ grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} -RI "$@" `bundle list --paths`
+}
