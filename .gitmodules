@@ -79,3 +79,6 @@
 [submodule ".vim/pack/plugins/start/ale"]
 	path = .vim/pack/plugins/start/ale
 	url = git@github.com:dense-analysis/ale.git
+[submodule ".vim/pack/plugins/start/copilot"]
+	path = .vim/pack/plugins/start/copilot
+	url = https://github.com/github/copilot.vim.git

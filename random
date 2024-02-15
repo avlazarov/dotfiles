@@ -1,0 +1,2 @@
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Control_L']"
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Ctrl>Alt_L']
